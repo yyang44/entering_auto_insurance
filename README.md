@@ -138,7 +138,7 @@ We also find out that points taken from clients’ licenses is a powerful charac
 
 ![children](./diagrams/07_number_children.png)
 
-We also analyzed the number of children reported in clients’ families. Unfortunately, this time the graph did not give us an obvious clue on how we should process our data. The difference between each point is minor and the trend line is almost horizontal. Therefore, this time we decided to divide our customers purely based on common sense. A common American family usually has three children or less, so we choose `0` (`0` is always important) and `3` as our threshold in this case.
+We also analyzed the number of children reported in clients’ families. Unfortunately, this time the graph did not give us an obvious clue on how we should process our data. The difference between each point is minor and the trend line is almost horizontal. Therefore, this time we decided to divide our customers purely based on common sense. A common American family usually has three children or less, so we choose `0` (0 is always important) and `3` as our threshold in this case.
  
 At this point, you may come up with a question: does our classification really work? Especially that we sometimes used common sense instead of robust analytic evidence. Well, the visualizations tell us that they indeed work.
 
@@ -151,7 +151,7 @@ Other than numerical features, we also have complicated categorical features tha
 
 ![ve type|200x100](./diagrams/09_v_type.png)
 
-This feature originally classified out customer as six different categories: minivan, panel truck, pickup, sport car, SUV and van. We also made a bar plot for these six different vehicle types. You may notice that besides “sports car”, all other bars present similar height and color. Such pattern indicates that only clients that have insured a sports car imply a higher risk of filing a claim. In other words, in order to simplify our feature, we do not need to record each customer’s detailed vehicle type. Instead, we may just record our customers if their vehicle is a sports car or not.
+This feature originally classified out customer as six different categories: minivan, panel truck, pickup, sport car, SUV and van. We also made a bar plot for these six different vehicle types. You may notice that besides `“sports car”`, all other bars present similar height and color. Such pattern indicates that only clients that have insured a sports car imply a higher risk of filing a claim. In other words, in order to simplify our feature, we do not need to record each customer’s detailed vehicle type. Instead, we may just record our customers if their vehicle is a sports car or not.
  
 ### Binary Features – License Revoked, Vehicle Use
 We also pick two binary features that do not need further processing since they are already simple enough. One of these features show if the insureds’ licenses `have been revoked` in the past seven years. The other one classifies insureds based on how they use their vehicles. If they are recorded as `“private”`, it means that vehicles are personally used; if they are marked as `“commercial”`, it means their vehicles are for business purpose. These two binary features, together with the four transformed features make up our scoring system.

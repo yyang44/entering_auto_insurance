@@ -9,13 +9,13 @@
    - Features and Claims
    - Customers Profile
    - Scoring System
-3. [Selecting Important Features](#Selecting-Important-Features)
+3. [Selecting Important Features](#Important-Features)
    - The Importance of Using Categorical Features
    - From Numerical to Categorical – Age, Points Taken, Number of Children
    - From Complexity to Simplicity – Vehicle Type
    - Binary Features – License Revoked, Vehicle Use
-4. [Analyzing Zero Claim Customers](#Analyzing-Zero-Claim-Customers)
-5. [Takeaway](#Takeaway:Scoring-System)
+4. [Analyzing Zero Claim Customers](#Analyzing-Customers)
+5. [Takeaway](#Takeaway:-Scoring-System)
    - Final version of Scoring System
    - Validation
 7. [What's Next](#What's-Next)

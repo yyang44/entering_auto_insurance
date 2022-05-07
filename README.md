@@ -116,4 +116,45 @@ In this example, this customer has 3 out of 5 scores. So he is in a mid-risky ra
 
 One important and major goal here is finding these specific selected features in building a reasonable and valid scoring system for classifying customers. 
 
+## Important Features
+
+### To Begin with – The Importance of Using Categorical Features
+In our scoring system, we especially pick six important variables. We chose these features based on several rules. First, these features should be significantly related to classify our clients. We also chose our features wisely expecting that we could lower our budget when running our business in the practice. Thus, we want our features to be simple enough to process. That is, we need simple-enough categorical features in forming our scoring system. The logic behind it is easy to understand. In practice, we need to collect this information from our customers to score our clients. Then it is much easier to get the right answer when asking “is your vehicle value above $10000” rather than asking “How much does your vehicle value”. On the other hand, it is also easier for the computer to process categorical data rather than numerical data. Using categorical data would largely save our opportunity cost.
+ 
+In conclusion, we do not just want our features qualified for the scoring system. We also want them to be simple enough to deal with. Categorical features with two or three categories would be perfect choices. Based on these criteria, we chose six features to form our scoring system and transformed them into simplified categorical features if necessary.
+
+### From Numerical to Categorical – Age, Points Taken, Number of Children
+We have three features that are transformed from numerical features: the insured's age, the points taken from the license, and the number of children that insureds have.
+
+//insert pic
+
+Above is a graph that plots the average number of claims and total claim amount in each age group. There is an interesting phenomenon here that the relationship between claims and age has different patterns when insureds are in the young, middle-aged, or the elder groups. You could tell from the graph that when the insureds are younger than 30 or older than 60, both the average number of claims and total claims present an erratic pattern. You may also notice that bars or points in these two areas are generally higher than those in the 30 to 60 area. Both appearances indicate that insureds under 30 or above 60 are potentially “riskier” than insureds between 30 and 60. The proof is also revealed in the graph that bars and lines are relatively stable between 30 and 60. Based on the above pattern, instead of recording the specific age of our customer, we choose to classify them into three different age groups: “young” as under 30, “Middle” as 30 to 60, and “Elders” as insureds older than 60.
+
+//insert pic
+
+We also find out that points taken from clients’ licenses is a powerful character. Here is another graph that plots the relationship between the average total claims and the points taken from the license. Notice the sudden drop at point 12. We may notice that when the points being taken are less than 12 (including 12), the difference between bars is not noticeable. Considering that we are analyzing 5-year total claims, the difference would be even smaller when spreading the difference into each year. Thus, we may conclude that only insureds that have taken more than 12 points are riskier than the other groups. The graph indeed indicates that these insureds reported higher historical total claims. We also applied 0 as another threshold since no matter what insureds have no points taken is still different from those who have points taken before. This threshold is chosen based on common sense.
+
+//insert pic
+
+We also analyzed the number of children reported in clients’ families. Unfortunately, this time the graph did not give us an obvious clue on how we should process our data. The difference between each point is minor and the trend line is almost horizontal. Therefore, this time we decided to divide our customers purely based on common sense. A common American family usually has three children or less, so we choose 0 (0 is always important) and 3 as our threshold in this case.
+ 
+At this point, you may come up with a question: does our classification really work? Especially that we sometimes used common sense instead of robust analytic evidence. Well, the visualizations tell us that they indeed work.
+
+//insert pic
+
+Here are the bar plots for the three transformed categorical features. You may notice how both the average number of claims and total claims reveal notable differences among groups. Such patterns give us confidence that our transformation is valuable.
+
+//insert pic
+
+### From Complexity to Simplicity – Vehicle Type
+Other than numerical features, we also have complicated categorical features that needs to be simplified. That is, the insured's vehicle types.
+
+// insert pic
+
+This feature originally classified out customer as six different categories: minivan, panel truck, pickup, sport car, SUV and van. We also made a bar plot for these six different vehicle types. You may notice that besides “sports car”, all other bars present similar height and color. Such pattern indicates that only clients that have insured a sports car imply a higher risk of filing a claim. In other words, in order to simplify our feature, we do not need to record each customer’s detailed vehicle type. Instead, we may just record our customers if their vehicle is a sports car or not.
+ 
+### Binary Features – License Revoked, Vehicle Use
+We also pick two binary features that do not need further processing since they are already simple enough. One of these features show if the insureds’ licenses have been revoked in the past seven years. The other one classifies insureds based on how they use their vehicles. If they are recorded as “private”, it means that vehicles are personally used; if they are marked as “commercial”, it means their vehicles are for business purpose. These two binary features, together with the four transformed features make up our scoring system.
+
+
 

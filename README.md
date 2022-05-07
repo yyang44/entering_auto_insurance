@@ -118,7 +118,7 @@ Here is an example with some selected features:
 
 In this example, this customer has 3 out of 5 scores. So he is in a mid-risky range. 
 
-One important and major goal here is finding these specific selected features in building a reasonable and valid scoring system for classifying customers. 
+One critical and major goal here is finding these specific selected features in building a reasonable and valid scoring system for classifying customers. 
 
 ## Important Features
 

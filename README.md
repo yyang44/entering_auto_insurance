@@ -18,7 +18,7 @@
 5. [Takeaway](#Takeaway:-Scoring-System)
    - Final version of Scoring System
    - Validation
-7. [What's Next](#What's-Next)
+7. [What's Next](#Whats-Next)
 
 ## Backstory
 

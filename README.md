@@ -86,3 +86,34 @@ In our sample data:
  > 
 From above calculation results, we could see that the amount of money being processed is large and the frequency of filing claims happens very often (even more often than you thought).
 
+### Customers Profile
+Customers are the core of an auto insurance company. The composition of our customers decides the future of the company to a great extent.  We would like to have a picture of our customers profiles thus knowing better about our market.
+
+Doing analysis in three leading fields: gender, education level, ages; we find no highly-biased distribution in any field.
+
+// insert pictures
+
+In all three diagrams, the percentage distribution is rather even and aligning with our common sense. There is no such group of people with features that company favors over other groups. 
+
+### Scoring System
+
+As we mentioned before, the top thing for a “green-hand” in this industry is to know whether this customer will file a claim. Identifying risky customers saves your time and energy, especially at the beginning of your career. 
+
+However, we conclude from the last part in examining customer profiles that there are no naturally grouped customers from our data. So what we need to do now is linking the customer data (both associated with vehicles and drivers) with the claim data. Such cross analysis gives us an idea of a much more preferred customer profiling.
+
+To quantitatively evaluate such customer profiles, we developed our scoring system. This is a way to classify customers according to how risky they are. Being high risk means this customer is more likely to file a claim than others. We assume that high risky customers share some extent of the same features and it is possible to find those specific features from deeper data analysis. 
+
+Remember that there are over 15 features from the data and it will be time consuming if we take all features into account. Instead, we just select a few of them to build our scoring system. If a customer falls into one feature, then he/she gets one risky score.
+Higher score, more “risky” in filing a claim the customer is. Vise Versa.
+
+Here is an example with some selected features:
+*Note that here are just example features for illustration use.*
+*Does not represent the final findings in our actual scoring system.*
+
+//insert pictures
+
+In this example, this customer has 3 out of 5 scores. So he is in a mid-risky range. 
+
+One important and major goal here is finding these specific selected features in building a reasonable and valid scoring system for classifying customers. 
+
+

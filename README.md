@@ -142,16 +142,14 @@ We also analyzed the number of children reported in clients’ families. Unfortu
  
 At this point, you may come up with a question: does our classification really work? Especially that we sometimes used common sense instead of robust analytic evidence. Well, the visualizations tell us that they indeed work.
 
-![category](./diagrams/08_category.png)
-
 Here are the bar plots for the three transformed categorical features. You may notice how both the average number of claims and total claims reveal notable differences among groups. Such patterns give us confidence that our transformation is valuable.
 
-![ve type](./diagrams/09_v_type.png)
+![category](./diagrams/08_category.png)
 
 ### From Complexity to Simplicity – Vehicle Type
 Other than numerical features, we also have complicated categorical features that needs to be simplified. That is, the insured's vehicle types.
 
-![zero claim](./diagrams/10_zero_claim.png)
+![ve type](./diagrams/09_v_type.png)
 
 This feature originally classified out customer as six different categories: minivan, panel truck, pickup, sport car, SUV and van. We also made a bar plot for these six different vehicle types. You may notice that besides “sports car”, all other bars present similar height and color. Such pattern indicates that only clients that have insured a sports car imply a higher risk of filing a claim. In other words, in order to simplify our feature, we do not need to record each customer’s detailed vehicle type. Instead, we may just record our customers if their vehicle is a sports car or not.
  
@@ -162,7 +160,7 @@ We also pick two binary features that do not need further processing since they 
 
 In order to use our features to form a reliable scoring system, we first must understand our customers. We need to know who are more likely to file a claim and who are not. Thus, we tried to “describe” customers that have never filed a claim before by using our chosen features.
 
-// insert pic
+![zero claim](./diagrams/10_zero_claim.png)
 
 According to these donut charts, it is easy to notice that these clients share similar attributes. In other words, to “describe” insureds that are less likely to file a claim, most of them are using vehicles for private reason, have no record that their license been revoked in the past seven years, and not using a sports car; Most of them are aged between 30 and 60, have no children and have no points been taken from their licenses.
  
@@ -172,7 +170,7 @@ Based on the above analysis, we may conclude that for each individual customer, 
 ### Final version
 Taken the results from customers with zero claims, we finally developed our complete scoring system with these following selected features:
 
-//insert pic
+![final ss](./diagrams/11_final_scoring.png)
 
 For each of those six carefully selected features, the customer will get one risky point if he/she satisfies the red colored criteria, and zero risky point if he/she satisfies the green colored criteria. 
 
@@ -183,9 +181,9 @@ For each of those six carefully selected features, the customer will get one ris
 ### Validate the final version of scoring system
 How well does our system work? Let’s examine it again with full company data, especially against the number of claims and amount of claims. 
 
-//insert pic
+![number risky](./diagrams/12_number_risky.png)
 
-//insert pic
+![amount risky](./diagrams/13_amount_risky.png)
 
 According to both two bar charts, there is an obvious positive relationship between risky score and number of claims/claim amount. 
 

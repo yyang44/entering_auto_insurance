@@ -5,8 +5,8 @@
 
 ## Table of Contents
 1. [Backstory](#backstory)
-2. [Data Overview] (#data_overview)
-   - Features and Claims
+2. [Data Overview](#Data-Overview)
+   - [Features and Claims](#Features-and-Claims)
    - Customers Profile
    - Scoring System
 3. Selecting Important Features

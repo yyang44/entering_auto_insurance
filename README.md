@@ -128,11 +128,11 @@ In conclusion, we do not just want our features qualified for the scoring system
 ### From Numerical to Categorical – Age, Points Taken, Number of Children
 We have three features that are transformed from numerical features: the insured's age, the points taken from the license, and the number of children that insureds have.
 
-//insert pic
+![age dis](./diagrams/05_age.png)
 
 Above is a graph that plots the average number of claims and total claim amount in each age group. There is an interesting phenomenon here that the relationship between claims and age has different patterns when insureds are in the young, middle-aged, or the elder groups. You could tell from the graph that when the insureds are younger than 30 or older than 60, both the average number of claims and total claims present an erratic pattern. You may also notice that bars or points in these two areas are generally higher than those in the 30 to 60 area. Both appearances indicate that insureds under 30 or above 60 are potentially “riskier” than insureds between 30 and 60. The proof is also revealed in the graph that bars and lines are relatively stable between 30 and 60. Based on the above pattern, instead of recording the specific age of our customer, we choose to classify them into three different age groups: “young” as under 30, “Middle” as 30 to 60, and “Elders” as insureds older than 60.
 
-//insert pic
+![points taken](./diagrams/06_points_taken.png)
 
 We also find out that points taken from clients’ licenses is a powerful character. Here is another graph that plots the relationship between the average total claims and the points taken from the license. Notice the sudden drop at point 12. We may notice that when the points being taken are less than 12 (including 12), the difference between bars is not noticeable. Considering that we are analyzing 5-year total claims, the difference would be even smaller when spreading the difference into each year. Thus, we may conclude that only insureds that have taken more than 12 points are riskier than the other groups. The graph indeed indicates that these insureds reported higher historical total claims. We also applied 0 as another threshold since no matter what insureds have no points taken is still different from those who have points taken before. This threshold is chosen based on common sense.
 

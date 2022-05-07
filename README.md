@@ -112,7 +112,7 @@ Here is an example with some selected features:
 *Note that here are just example features for illustration use.*
 *Does not represent the final findings in our actual scoring system.*
 
-//insert pictures
+![sample scoring](./diagrams/04_sample_scoring.png)
 
 In this example, this customer has 3 out of 5 scores. So he is in a mid-risky range. 
 

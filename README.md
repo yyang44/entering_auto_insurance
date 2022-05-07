@@ -70,6 +70,7 @@ Keep all these in mind, let’s start to take a look at an auto insurance compan
 
 ## Data Overview
 The sample data we are looking at comes from a five year claim history from an actual auto company. [data link](https://data.world/)
+
 The tools we used to analyze and present our data are python and tableau. 
 
 ### Features and Claims

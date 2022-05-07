@@ -136,22 +136,22 @@ Above is a graph that plots the average number of claims and total claim amount 
 
 We also find out that points taken from clients’ licenses is a powerful character. Here is another graph that plots the relationship between the average total claims and the points taken from the license. Notice the sudden drop at point 12. We may notice that when the points being taken are less than 12 (including 12), the difference between bars is not noticeable. Considering that we are analyzing 5-year total claims, the difference would be even smaller when spreading the difference into each year. Thus, we may conclude that only insureds that have taken more than 12 points are riskier than the other groups. The graph indeed indicates that these insureds reported higher historical total claims. We also applied 0 as another threshold since no matter what insureds have no points taken is still different from those who have points taken before. This threshold is chosen based on common sense.
 
-//insert pic
+![children](./diagrams/07_number_children.png)
 
 We also analyzed the number of children reported in clients’ families. Unfortunately, this time the graph did not give us an obvious clue on how we should process our data. The difference between each point is minor and the trend line is almost horizontal. Therefore, this time we decided to divide our customers purely based on common sense. A common American family usually has three children or less, so we choose 0 (0 is always important) and 3 as our threshold in this case.
  
 At this point, you may come up with a question: does our classification really work? Especially that we sometimes used common sense instead of robust analytic evidence. Well, the visualizations tell us that they indeed work.
 
-//insert pic
+![category](./diagrams/08_category.png)
 
 Here are the bar plots for the three transformed categorical features. You may notice how both the average number of claims and total claims reveal notable differences among groups. Such patterns give us confidence that our transformation is valuable.
 
-//insert pic
+![ve type](./diagrams/09_v_type.png)
 
 ### From Complexity to Simplicity – Vehicle Type
 Other than numerical features, we also have complicated categorical features that needs to be simplified. That is, the insured's vehicle types.
 
-// insert pic
+![zero claim](./diagrams/10_zero_claim.png)
 
 This feature originally classified out customer as six different categories: minivan, panel truck, pickup, sport car, SUV and van. We also made a bar plot for these six different vehicle types. You may notice that besides “sports car”, all other bars present similar height and color. Such pattern indicates that only clients that have insured a sports car imply a higher risk of filing a claim. In other words, in order to simplify our feature, we do not need to record each customer’s detailed vehicle type. Instead, we may just record our customers if their vehicle is a sports car or not.
  

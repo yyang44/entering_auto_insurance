@@ -1,5 +1,5 @@
 # Understanding Your Customers 
-> Guide for entering auto insurance industries through analysing auto insurance company data.
+> **Guide for entering auto insurance industries through analysing auto insurance company data.**
 > 
 > Presented By: Brenna Yin, Yijun Yang
 

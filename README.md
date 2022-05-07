@@ -177,9 +177,9 @@ Taken the results from customers with zero claims, we finally developed our comp
 
 For each of those six carefully selected features, the customer will get one risky point if he/she satisfies the red colored criteria, and zero risky point if he/she satisfies the green colored criteria. 
 
-**Higher score, more likely to file a claim.**
+Higher score, more likely to file a claim.
 
-**Lower score,  less likely to file a claim.**
+Lower score,  less likely to file a claim.
 
 ### Validate the final version of scoring system
 How well does our system work? Let’s examine it again with full company data, especially against the number of claims and amount of claims. 

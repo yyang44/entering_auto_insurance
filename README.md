@@ -156,5 +156,45 @@ This feature originally classified out customer as six different categories: min
 ### Binary Features – License Revoked, Vehicle Use
 We also pick two binary features that do not need further processing since they are already simple enough. One of these features show if the insureds’ licenses have been revoked in the past seven years. The other one classifies insureds based on how they use their vehicles. If they are recorded as “private”, it means that vehicles are personally used; if they are marked as “commercial”, it means their vehicles are for business purpose. These two binary features, together with the four transformed features make up our scoring system.
 
+## Analyzing Customers
 
+In order to use our features to form a reliable scoring system, we first must understand our customers. We need to know who are more likely to file a claim and who are not. Thus, we tried to “describe” customers that have never filed a claim before by using our chosen features.
 
+// insert pic
+
+According to these donut charts, it is easy to notice that these clients share similar attributes. In other words, to “describe” insureds that are less likely to file a claim, most of them are using vehicles for private reason, have no record that their license been revoked in the past seven years, and not using a sports car; Most of them are aged between 30 and 60, have no children and have no points been taken from their licenses.
+ 
+Based on the above analysis, we may conclude that for each individual customer, the more he or she fits the above description, the less likely they will file a claim in the future. Therefore, we could “score” our customers based on how much they fit the description of no-claim customers. The higher the score, the “riskier” they are.
+
+## Takeaway: Scoring System
+### Final version
+Taken the results from customers with zero claims, we finally developed our complete scoring system with these following selected features:
+
+//insert pic
+
+For each of those six carefully selected features, the customer will get one risky point if he/she satisfies the red colored criteria, and zero risky point if he/she satisfies the green colored criteria. 
+
+**Higher score, more likely to file a claim.**
+
+**Lower score,  less likely to file a claim.**
+
+## Validate the final version of scoring system
+How well does our system work? Let’s examine it again with full company data, especially against the number of claims and amount of claims. 
+
+//insert pic
+
+//insert pic
+
+According to both two bar charts, there is an obvious positive relationship between risky score and number of claims/claim amount. 
+
+Higher risky scores cause a larger average number of claims, especially when the customer gets 6 points out of 6. 
+Higher risky scores also lead to more expensive claim bills. Group of Score 5 has a claim amount of `$903.2` which is more than twice of Score 2’s average claim amount (`$355.9`).
+
+Someone might notice there is a drop in average claim amount when the risky score is as high as 6. That is because this bar chart shots the average claim amount. The cases where customers scored a total of 6 points are rare so the average claim amount is rather low. It is worth noticing that the average number of claims, meaning how likely this person will file a claim, is obviously the largest (`0.6`) for score 6 customers.
+
+## What’s next
+Auto insurance companies today are closely associated with large volumes of data. What we present today did not fully utilize the data. Instead, we just pick the part that could help people who are just entering this field to the greatest extent. We hope this analysis will give you some inspiration on your work later in this field. 
+
+Now you can understand your market and policyholders better, both quantitatively and qualitatively. That ensured adequate coverage for those people and thus providing better customer care. Such understanding also prevents insurance fraud from the company level and further leads to high efficient processing and finally makes more money. 
+
+The real world is harsh and more complex, outliers do happen from time to time. The rules obtained from data are changing because people are changing with time. Data is helpful in helping you get a big picture and predicting the trends. However, completely relying on data might lead to overconfidence and ignoring customer’s requirements and actual needs.

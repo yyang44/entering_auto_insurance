@@ -4,8 +4,8 @@
 > Presented By: Brenna Yin, Yijun Yang
 
 ## Table of Contents
-1. Backstory
-2. Data Overview
+1. [Backstory](#backstory)
+2. [Data Overview] (#data_overview)
    - Features and Claims
    - Customers Profile
    - Scoring System
@@ -68,7 +68,7 @@ When you have access to any insurance data, you should not disclose that private
 You must refrain from publishing data that contains personally identifiable information (PII). Remember that PII can also include information that allows a person's identity to be inferred.
 Keep all these in mind, let’s start to take a look at an auto insurance company data. 
 
-## Overview of the Data
+## Data Overview
 The sample data we are looking at comes from a five year claim history from an actual auto company. (data link: )
 The tools we used to analyze and present our data are python and tableau. 
 

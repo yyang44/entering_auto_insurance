@@ -91,7 +91,9 @@ Customers are the core of an auto insurance company. The composition of our cust
 
 Doing analysis in three leading fields: gender, education level, ages; we find no highly-biased distribution in any field.
 
-![this is a pic](./diagrams/01_gender.png)
+![gender eda](./diagrams/01_gender.png)
+![educataion eda](./diagrams/02_education.png)
+![age eda](./diagrams/03_age.png)
 
 In all three diagrams, the percentage distribution is rather even and aligning with our common sense. There is no such group of people with features that company favors over other groups. 
 

@@ -109,8 +109,10 @@ Remember that there are over 15 features from the data and it will be time consu
 Higher score, more “risky” in filing a claim the customer is. Vise Versa.
 
 Here is an example with some selected features:
-*Note that here are just example features for illustration use.*
-*Does not represent the final findings in our actual scoring system.*
+
+> *Note that here are just example features for illustration use.*
+
+> *Does not represent the final findings in our actual scoring system.*
 
 ![sample scoring](./diagrams/04_sample_scoring.png)
 

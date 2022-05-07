@@ -71,7 +71,7 @@ Keep all these in mind, let’s start to take a look at an auto insurance compan
 ## Data Overview
 The sample data we are looking at comes from a five year claim history from an actual auto company. [Data link](https://data.world/saleem786/car-insurance-claims-analysis)
 
-The tools we used to analyze and present our data are python and tableau. 
+The tools we used to analyze and present our data are Python and Tableau. 
 
 ### Features and Claims
 Usually, the data from an auto insurance company is massive. To better understand such a large volume of data, we divide the data into three groups:

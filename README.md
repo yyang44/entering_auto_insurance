@@ -149,7 +149,7 @@ Here are the bar plots for the three transformed categorical features. You may n
 ### From Complexity to Simplicity – Vehicle Type
 Other than numerical features, we also have complicated categorical features that needs to be simplified. That is, the insured's vehicle types.
 
-![ve type](./diagrams/09_v_type.png)
+![ve type|200x100](./diagrams/09_v_type.png)
 
 This feature originally classified out customer as six different categories: minivan, panel truck, pickup, sport car, SUV and van. We also made a bar plot for these six different vehicle types. You may notice that besides “sports car”, all other bars present similar height and color. Such pattern indicates that only clients that have insured a sports car imply a higher risk of filing a claim. In other words, in order to simplify our feature, we do not need to record each customer’s detailed vehicle type. Instead, we may just record our customers if their vehicle is a sports car or not.
  

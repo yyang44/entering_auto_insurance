@@ -15,10 +15,10 @@
    - From Complexity to Simplicity – Vehicle Type
    - Binary Features – License Revoked, Vehicle Use
 4. [Analyzing Zero Claim Customers](#4-Analyzing-Customers)
-5. [Takeaway](#5.-Takeaway-Scoring-System)
+5. [Takeaway](#5-Takeaway-Scoring-System)
    - Final version of the Scoring System
    - Validation
-7. [What's Next](#6-Whats-Next)
+6. [What's Next](#6-Whats-Next)
 
 ## 1. Backstory
 

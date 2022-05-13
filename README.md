@@ -4,21 +4,21 @@
 > Presented By: Brenna Yin, Yijun Yang
 
 ## Table of Contents
-1. [Backstory](#1.-backstory)
-2. [Data Overview](#2.-Data-Overview)
+1. [Backstory](#1-backstory)
+2. [Data Overview](#2-Data-Overview)
    - Features and Claims
    - Customers Profile
    - Scoring System
-3. [Selecting Important Features](#3.-Important-Features)
+3. [Selecting Important Features](#3-Important-Features)
    - The Importance of Using Categorical Features
    - From Numerical to Categorical – Age, Points Taken, Number of Children
    - From Complexity to Simplicity – Vehicle Type
    - Binary Features – License Revoked, Vehicle Use
-4. [Analyzing Zero Claim Customers](#4.-Analyzing-Customers)
+4. [Analyzing Zero Claim Customers](#4-Analyzing-Customers)
 5. [Takeaway](#5.-Takeaway-Scoring-System)
    - Final version of the Scoring System
    - Validation
-7. [What's Next](#6.-Whats-Next)
+7. [What's Next](#6-Whats-Next)
 
 ## 1. Backstory
 

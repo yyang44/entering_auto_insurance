@@ -81,9 +81,9 @@ Usually, the data from an auto insurance company is massive. To better understan
 3. Information about the claim: claim or not, number of claims, amount of claim. 
 
 In our sample data:
- > The total claim amount in five years for this company is `$11.33M`, with an average claim amount of `$1481`.
+ > The total claim amount in five years for this company is **`$11.33M`**, with an average claim amount of **`$1481`**.
  > 
- > The total number of claims in five years is `6046 claims`, with an average number of claims `0.79`. 
+ > The total number of claims in five years is **`6046 claims`**, with an average number of claims **`0.79`**. 
  > 
 From the above calculation results, we could see that the amount of money being processed is large and the frequency of filing claims happens very often (even more often than you thought).
 

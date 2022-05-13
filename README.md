@@ -20,7 +20,7 @@
    - Validation
 7. [What's Next](#Whats-Next)
 
-## Backstory
+## 1. Backstory
 
 When I bought my first car, I realized that auto insurance is no longer the advertisement I see on the billboards standing beside the freeways. It became a product that I am required to purchase and it needs to be chosen carefully. 
 
@@ -68,7 +68,7 @@ When you have access to any insurance data, you should not disclose that private
 You must refrain from publishing data that contains personally identifiable information (PII). Remember that PII can also include information that allows a person's identity to be inferred.
 Keep all these in mind, and let’s start to take a look at auto insurance company data. 
 
-## Data Overview
+## 2. Data Overview
 The sample data we are looking at comes from a five-year claim history from an actual auto insurance company. [Data link](https://data.world/saleem786/car-insurance-claims-analysis)
 
 The tools we used to analyze and present our data are Python and Tableau. 
@@ -121,7 +121,7 @@ In this example, this customer has 3 out of 5 scores. So he is in a mid-risky ra
 
 One critical and major goal here is finding these specifically selected features in building a reasonable and valid scoring system for classifying customers. 
 
-## Important Features
+## 3. Important Features
 
 ### To Begin with – The Importance of Using Categorical Features
 In our scoring system, we especially choose six important variables. We chose these features based on several rules. First, these features should be significantly related to classifying our clients. We also chose our features wisely expecting that we could lower our budget when running our business in the practice. Thus, we want our features to be simple enough to process. That is, we need simple-enough categorical features to form our scoring system. The logic behind it is easy to understand. In practice, we need to collect this information from our customers to score our clients. Then it is much easier to get the right answer when asking “is your vehicle value above $10000” rather than asking “How much does your vehicle value”. On the other hand, it is also easier for the computer to process categorical data rather than numerical data. Using categorical data would largely save our opportunity cost.
@@ -159,7 +159,7 @@ This feature originally classified our customers into six different categories: 
 ### Binary Features – License Revoked, Vehicle Use
 We also pick two binary features that do not need further processing since they are already simple enough. One of these features shows if the insureds’ licenses `have been revoked` in the past seven years. The other one classifies insureds based on how they use their vehicles. If they are recorded as `“private”`, it means that vehicles are personally used; if they are marked as `“commercial”`, it means their vehicles are for business purposes. These two binary features, together with the four transformed features make up our scoring system.
 
-## Analyzing Customers
+## 4. Analyzing Customers
 
 In order to use our features to form a reliable scoring system, we first must understand our customers. We need to know who is more likely to file a claim and who is not. Thus, we tried to “describe” customers that have never filed a claim before by using our chosen features.
 
@@ -169,7 +169,7 @@ According to these donut charts, it is easy to notice that these clients share s
  
 Based on the above analysis, we may conclude that for each individual customer, the more he or she fits the above description, the less likely they will file a claim in the future. Therefore, we could “score” our customers based on how much they fit the description of no-claim customers. The higher the score, the “riskier” they are.
 
-## Takeaway: Scoring System
+## 5. Takeaway: Scoring System
 ### Final version
 Taken the results from customers with zero claims, we finally developed our complete scoring system with the following selected features:
 

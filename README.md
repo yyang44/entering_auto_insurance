@@ -195,7 +195,7 @@ Higher risky scores also lead to more expensive claim bills. Group of Score 5 ha
 
 Someone might notice there is a drop in the average claim amount when the risky score is as high as 6. That is because this bar chart shows the average claim amount. The cases where customers scored a total of 6 points are rare so the average claim amount is rather low. It is worth noticing that the average number of claims, meaning how likely this person will file a claim, is obviously the largest (`0.6`) for score 6 customers.
 
-## What’s next
+## 6. What’s next
 Auto insurance companies today are closely associated with large volumes of data. What we present today did not fully utilize the data. Instead, we just pick the part that could help people who are just entering this field to the greatest extent. We hope this analysis will give you some inspiration for your work later in this field. 
 
 Now you can understand your market and policyholders better, both quantitatively and qualitatively. That ensured adequate coverage for those people and thus providing better customer care. Such understanding also prevents insurance fraud from the company level and further leads to high efficient processing and finally makes more money. 

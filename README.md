@@ -3,7 +3,7 @@
 > 
 > Presented By: Brenna Yin, Yijun Yang
 >
-> Less words versition of this report could be found under the same repo. 
+> Less words version of this report could be found here:
 [Car Insurance.pdf](https://github.com/yyang44/entering_auto_insurance/blob/main/Car%20Insurance.pdf)
 
 ## Table of Contents

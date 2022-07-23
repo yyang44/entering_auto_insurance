@@ -3,7 +3,8 @@
 > 
 > Presented By: Brenna Yin, Yijun Yang
 >
-> Less words versition of this report could be found under the same repo. (Car Insurance.pdf)
+> Less words versition of this report could be found under the same repo. 
+[Car Insurance.pdf](https://github.com/yyang44/entering_auto_insurance/blob/main/Car%20Insurance.pdf)
 
 ## Table of Contents
 1. [Backstory](#1-backstory)

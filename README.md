@@ -2,6 +2,7 @@
 > **Guide for entering auto insurance industries through analyzing auto insurance company data.**
 > 
 > Presented By: Brenna Yin, Yijun Yang
+> Power Point Versition of this report could be found under the same repo.
 
 ## Table of Contents
 1. [Backstory](#1-backstory)

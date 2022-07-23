@@ -4,7 +4,7 @@
 > Presented By: Brenna Yin, Yijun Yang
 >
 > Less words version of this report could be found here:
-[Car Insurance.pdf](https://github.com/yyang44/entering_auto_insurance/blob/main/Car%20Insurance.pdf)
+[Understand your Customers Efficiently through Data](https://github.com/yyang44/entering_auto_insurance/blob/main/Car%20Insurance.pdf)
 
 ## Table of Contents
 1. [Backstory](#1-backstory)

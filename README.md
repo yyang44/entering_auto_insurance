@@ -3,7 +3,7 @@
 > 
 > Presented By: Brenna Yin, Yijun Yang
 >
-> Power Point Versition of this report could be found under the same repo. (Car Insurance.pdf)
+> Less words versition of this report could be found under the same repo. (Car Insurance.pdf)
 
 ## Table of Contents
 1. [Backstory](#1-backstory)

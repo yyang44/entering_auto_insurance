@@ -1,7 +1,7 @@
 # Understanding Your Customers 
 > **Guide for entering auto insurance industries through analyzing auto insurance company data.**
 > 
-> Presented By: Brenna Yin, Yijun Yang
+> 
 >
 > Less words version of this report could be found here:
 [Understand your Customers Efficiently through Data](https://github.com/yyang44/entering_auto_insurance/blob/main/Car%20Insurance.pdf)
